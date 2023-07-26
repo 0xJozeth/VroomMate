@@ -3,7 +3,8 @@ import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<main className='overflow-hidden'>
+		/* the main className previously had overflow-hidden, which broke the dropdown */
+		<main className=''>
 			<Hero />
 
 			<div className='mt-12 padding-x padding-y max-width' id='discover'>
