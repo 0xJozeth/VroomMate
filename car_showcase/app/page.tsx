@@ -12,7 +12,7 @@ export default async function Home() {
 
 	return (
 		/* the main className previously had overflow-hidden, which broke the dropdown */
-		<main className=''>
+		<main className='overflow-hidden'>
 			<Hero />
 
 			<div
