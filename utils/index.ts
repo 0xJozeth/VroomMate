@@ -19,6 +19,7 @@ export async function fetchCars(filters: FilterProps) {
 	const { manufacturer, year, fuel, limit, model } = filters;
 
 	const headers = {
+		//Purposefully revealed this API for ease of testing. Please use responsibly.
 		'X-RapidAPI-Key': '92df356189msh30feb5b565113e6p126bc5jsna15febd97759',
 		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
 	};
@@ -39,7 +40,9 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
 
 	url.searchParams.append(
 		'customer',
-		process.env.NEXT_PUBLIC_IMAGIN_API_KEY || ''
+		//Purposefully revealed this API for ease of testing. Please use responsibly.
+		'hrjavascript-mastery' || ''
+		// process.env.NEXT_PUBLIC_IMAGIN_API_KEY || ''
 	);
 	url.searchParams.append('make', make);
 	url.searchParams.append('modelFamily', model.split(' ')[0]);
